@@ -5,7 +5,8 @@ const Q = require("q");
 const readdirRecursive = require("fs-readdir-recursive");
 const webidl2js = require("webidl2js");
 
-const UTIL_PATH = "lib/jsdom/living/generated/util.js";
+const outputDir = path.resolve(__dirname, "../../lib/jsdom/living/generated");
+const utilPath = path.resolve(outputDir, "idl-utils.js");
 
 function readConcatenatedSource(files) {
   return Q.all(files.map(f => {
@@ -19,7 +20,7 @@ function readConcatenatedSource(files) {
   });
 }
 
-function generateClasses(src, outputDir, implDir, utilPath) {
+function generateClasses(src, implDir) {
   webidl2js.generate(src, outputDir, implDir, { suppressErrors: true, implSuffix: "-impl", utilPath });
 }
 
@@ -38,7 +39,8 @@ function doConversion(inputPath) {
   .then(readConcatenatedSource)
   .then(src => {
     const folder = isDir ? inputPath : path.dirname(inputPath);
-    generateClasses(src, folder, ".", UTIL_PATH);
+    const implDir = path.resolve(__dirname, "../..", folder);
+    generateClasses(src, implDir);
   });
 }
 
@@ -46,4 +48,5 @@ function onlyIDL(filePath) {
   return path.extname(filePath) === ".idl";
 }
 
-doConversion("lib/jsdom/living/generated/events").done();
+doConversion("lib/jsdom/living/events").done();
+doConversion("lib/jsdom/living/attributes").done();
