@@ -12,7 +12,7 @@
     "Diego Perini <diego@dperini.com>"
   ],
   "license": "MIT",
-  "repository": "tmpvar/jsdom",
+  "repository": "diegoperini/jsdom",
   "dependencies": {
     "abab": "^1.0.0",
     "acorn": "^2.4.0",
