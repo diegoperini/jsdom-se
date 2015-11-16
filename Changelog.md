@@ -1,3 +1,7 @@
+## 7.0.2-st
+
+* String arguments to setTimeout and setInterval are now ignored instead of causing a crash. 
+
 ## 7.0.2
 
 * Fixed an issue where inside jsdom `<script>` code, `/regexpliteral/ instanceof RegExp` would be `false`.

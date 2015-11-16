@@ -1,3 +1,7 @@
+# Author of this fork (jsdom-se)
+Diego Perini <diego@dperini.com>
+
+# Original jsdom Authors
 Adam Faulkner <adamfaulkner1@gmail.com>
 Adrian Lang <mail@adrianlang.de>
 Adrian Makowski <adrian.makowski@gmail.com>

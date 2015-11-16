@@ -1,7 +1,7 @@
 {
-  "name": "jsdom",
+  "name": "jsdom-se",
   "version": "7.0.2",
-  "description": "A JavaScript implementation of the DOM and HTML standards",
+  "description": "jsdom fork for silent errors - A JavaScript implementation of the DOM and HTML standards",
   "keywords": [
     "dom",
     "html",
@@ -9,10 +9,7 @@
     "w3c"
   ],
   "maintainers": [
-    "Elijah Insua <tmpvar@gmail.com> (http://tmpvar.com)",
-    "Domenic Denicola <d@domenic.me> (https://domenic.me/)",
-    "Sebastian Mayr <sebmaster16@gmail.com> (http://blog.smayr.name/)",
-    "Joris van der Wel <joris@jorisvanderwel.com>"
+    "Diego Perini <diego@dperini.com>"
   ],
   "license": "MIT",
   "repository": "tmpvar/jsdom",
