@@ -1,4 +1,4 @@
-## 7.0.2-st
+## 7.0.2-st4
 
 * String arguments to setTimeout and setInterval are now ignored instead of causing a crash. 
 
