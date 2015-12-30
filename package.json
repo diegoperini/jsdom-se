@@ -1,6 +1,6 @@
 {
   "name": "jsdom-se",
-  "version": "7.0.2-se4",
+  "version": "7.2.2-se",
   "description": "jsdom fork for silent errors - A JavaScript implementation of the DOM and HTML standards",
   "keywords": [
     "dom",

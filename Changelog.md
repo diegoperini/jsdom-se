@@ -1,3 +1,7 @@
+## 7.2.2-se
+
+* Merged patches from jsdom 7.2.2
+
 ## 7.2.2
 
 * Fixed `canvasEl.toDataURL()`, with the `canvas` npm package installed; a recent update to the `canvas` package broke how we were passing arguments to do.
@@ -38,7 +42,7 @@ This is a rather large release bringing with it several important re-implementat
 * `Node.prototype`'s `insertBefore`, `replaceChild`, and `appendChild` methods now check their arguments more correctly.
 * The browser builds now have regained the ability to fetch URLs for content and the like; this had been broken due to an issue with the browser-request package, which is no longer necessary anyway.
 
-## 7.0.2-st4
+## 7.0.2-se4
 
 * String arguments to setTimeout and setInterval are now ignored instead of causing a crash. 
 
