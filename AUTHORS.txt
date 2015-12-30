@@ -29,9 +29,9 @@ Brian Peacock <bpeacock@fastfig.com>
 Chad Walker <chad@chad-cat-lore-eddie.com>
 Chris Buckley <chris@cmbuckley.co.uk>
 Chris Carpita <ccarpita@gmail.com>
+Christoph Pojer <christoph.pojer@gmail.com>
 Christophe Coevoet <stof@notk.org>
 cjroebuck <tophtfc@gmail.com>
-cpojer <christoph.pojer@gmail.com>
 daishi <daishi@axlight.com>
 Damian Janowski <damian.janowski@gmail.com>
 Dan Lidral-Porter <dan@luckysort.com>
@@ -50,6 +50,7 @@ Elijah Insua <tmpvar@gmail.com>
 E̵̘̳̘̝ṃ̟͈͙̗̹͘i͖͇ḷ͚͔̱̰̠y͜ ̩̲͕R̮̜͓̫o͉̣̦̘̖̖ͅs̫̣͜e̼͖̹̩͉͉͠ <nexxy@symphonysubconscious.com>
 Eugene Ware <eugene@noblesamurai.com>
 Evan Haas <evan@fictivekin.com>
+Evan Jacobs <evan.jacobs@enigma.io>
 Evan Jones <evan.q.jones@gmail.com>
 Federico Galassi <federico.galassi@gmail.com>
 fegs <ang0123dev@gmail.com>
@@ -61,6 +62,7 @@ FrozenCow <frozencow@gmail.com>
 Godmar Back <godmar@gmail.com>
 Gord Tanner <gtanner@gmail.com>
 gregory80 <gregory.tomlinson@gmail.com>
+Henry Zhu <hi@henryzoo.com>
 hij1nx <fernmicro@gmail.com>
 Ian Young <ian.greenleaf@gmail.com>
 indexzero <charlie.robbins@gmail.com>
@@ -74,6 +76,7 @@ Jason Davies <jason@jasondavies.com>
 Jason Orendorff <jason.orendorff@gmail.com>
 Jason Priestley <jason@teampatent.com>
 jden <jason@denizac.org>
+Jean-Francois Remy <jfremy@users.noreply.github.com>
 Jeff Carpenter <gcarpenterv@gmail.com>
 Jérémy Lal <kapouer@melix.org>
 Jerry Sievert <github@legitimatesounding.com>
@@ -138,6 +141,7 @@ Ralph Holzmann <ralphholzmann@gmail.com>
 Remy Loubradou <remyloubradou@gmail.com>
 Rich Harris <richard.a.harris@gmail.com>
 Ricky Chien <ricky060709@gmail.com>
+Ricordisamoa <ricordisamoa@openmailbox.org>
 Rob Dodson <lets.email.rob@gmail.com>
 Robin <fbzhong@gmail.com>
 Robin Berjon <robin@berjon.com>
@@ -149,11 +153,13 @@ Ryan Wolf <rwolf@borderstylo.com>
 S Sesha Sendhil <seshasendhil@gmail.com>
 Salvatore Porchia <sporchia@2co.com>
 Sam Ruby <rubys@intertwingly.net>
+Sammy Jelin <sjelin@gmail.com>
 Samori Gorse <samorigorse@gmail.com>
 saucy <zekewarren@gmail.com>
 Scott Ashton <scottmortonashton@gmail.com>
 Sean Jacke <seanineurope@gmail.com>
-Sebastian Mayr <sebmaster16@gmail.com>
+Sebastian Mayr <github@smayr.name>
+Sebastian McKenzie <sebmck@gmail.com>
 Sergei Ianovich <s@asutp.io>
 Shimon Doodkin <helpmepro1@gmail.com>
 sonnym <michaud.sonny@gmail.com>

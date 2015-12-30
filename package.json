@@ -17,14 +17,13 @@
     "abab": "^1.0.0",
     "acorn": "^2.4.0",
     "acorn-globals": "^1.0.4",
-    "browser-request": ">= 0.3.1 < 0.4.0",
     "cssom": ">= 0.3.0 < 0.4.0",
     "cssstyle": ">= 0.2.29 < 0.3.0",
     "escodegen": "^1.6.1",
-    "htmlparser2": ">= 3.7.3 < 4.0.0",
-    "nwmatcher": ">= 1.3.6 < 2.0.0",
-    "parse5": "^1.4.2",
+    "nwmatcher": ">= 1.3.7 < 2.0.0",
+    "parse5": "^1.5.1",
     "request": "^2.55.0",
+    "sax": "^1.1.4",
     "symbol-tree": ">= 3.1.0 < 4.0.0",
     "tough-cookie": "^2.2.0",
     "webidl-conversions": "^2.0.0",
@@ -47,19 +46,18 @@
     "selenium-standalone": "^4.6.1",
     "st": "^0.5.5",
     "wd": "0.3.12",
-    "webidl2js": "^1.0.0"
+    "webidl2js": "^3.0.0"
   },
   "browser": {
     "canvas": false,
-    "vm": "./lib/jsdom/vm-shim.js",
-    "request": "browser-request"
+    "vm": "./lib/jsdom/vm-shim.js"
   },
   "scripts": {
     "prepublish": "npm run convert-idl",
     "pretest": "npm run convert-idl && git submodule update --init --recursive",
     "test": "node ./test/runner",
     "test-browser": "node ./test/browser-runner",
-    "lint": "jscs lib/ && jscs test/ && eslint . && eslint --no-ignore lib/jsdom/living/generated/**/*-impl.js && eslint test/web-platform-tests/to-upstream --ext .html",
+    "lint": "jscs lib/ && jscs test/ && eslint . && eslint test/web-platform-tests/to-upstream --ext .html",
     "update-authors": "git log --format=\"%aN <%aE>\" | sort -f | uniq > AUTHORS.txt",
     "benchmark": "node ./benchmark/runner",
     "benchmark-browser": "node ./benchmark/runner --bundle",

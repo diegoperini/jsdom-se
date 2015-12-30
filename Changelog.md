@@ -1,3 +1,43 @@
+## 7.2.2
+
+* Fixed `canvasEl.toDataURL()`, with the `canvas` npm package installed; a recent update to the `canvas` package broke how we were passing arguments to do.
+* Fixed `data:` URL parsing to allow empty contents, e.g. `data:text/css;base64,`. (sebmck)
+
+## 7.2.1
+
+* Fixed a regression in XML parsing of attributes with a namespace URL but no prefix (e.g. `<math xmlns="http://www.w3.org/1998/Math/MathML">`).
+
+## 7.2.0
+
+* Added support for text selection APIs on `<input>` and `<textarea>`! (sjelin and yaycmyk)
+* Replaced our default XML parser with [sax](https://www.npmjs.com/package/sax), thus fixing many (but not all) issues with XML and XHTML parsing. To get a flavor of the issues fixed, check out these now-closed bugs: [#393](https://github.com/tmpvar/jsdom/issues/393), [#651](https://github.com/tmpvar/jsdom/issues/651), [#415](https://github.com/tmpvar/jsdom/issues/415), [#1276](https://github.com/tmpvar/jsdom/issues/1276).
+* Fixed the `<canvas>` tag to reset its contents when its width or height changed, including the change from the default 300 × 150 canvas. (Applies only when using the `canvas` npm package.)
+* Fixed an issue where `HTMLCollection`s would get confused when they contained elements with numeric `id`s or `name`s.
+* Fixed an issue with doctype parsing confusing the system ID and public ID.
+* Made the task posted by `postMessage` use the inside-jsdom timer queue, instead of the Node.js one. This allows easier mocking. (cpojer)
+
+## 7.1.1
+
+* When `<iframe>`s have unresolvable URLs, jsdom will no longer crash, but will instead just load `about:blank` into them. (This is the spec behavior.)
+* Fixed `document.writeln` to correctly handle multiple arguments; previously it ignored all after the first.
+* Fixed `FileList` objects to no longer have a property named `"undefined"`. (jfremy)
+
+## 7.1.0
+
+This is a rather large release bringing with it several important re-implementations of DOM and HTML APIs.
+
+* Our `EventTarget` implementation has been rewritten from scratch to follow the spec exactly. This should improve any edge case misbehaviors.
+* Our `Event` class hierarchy has been rewritten and fleshed out, fixing many gaps in functionality.
+  - Previously missing classes `KeyboardEvent` and `TouchEvent` are now implemented.
+  - Almost all supported `Event` subclasses now have constructors. (`TouchEvent` does not yet, and `MutationEvent` is specified to not have one.)
+  - All classes now have correct public APIs, e.g. getters instead of data properties, missing properties added, and constructors that correctly allow setting all the supported properties.
+  - `document.createEvent("customevent", ...)` now correctly creates a `CustomEvent` instead of an `Event`, and `CustomEvent.prototype.initProgressEvent` has been replaced with `CustomEvent.prototype.initCustomEvent`.
+* The `Attr` class and related attribute-manipulating methods has been rewritten to follow the latest specification. In particular, `Attr` is no longer a subclass of `Node`, and no longer has child text nodes.
+* The `<template>` element implementation has been greatly improved, now passing most web platform tests. Its `.content` property no longer has an extra intermediate document fragment; it no longer has child nodes; and related parts of the parser and serializer have been fixed, including `innerHTML` and `outerHTML`, to now work as specified.
+* `querySelector`, `querySelectorAll`, and `matches` now correctly throw `"SyntaxError"` `DOMException`s for invalid selectors, instead of just `Error` instances.
+* `Node.prototype`'s `insertBefore`, `replaceChild`, and `appendChild` methods now check their arguments more correctly.
+* The browser builds now have regained the ability to fetch URLs for content and the like; this had been broken due to an issue with the browser-request package, which is no longer necessary anyway.
+
 ## 7.0.2-st4
 
 * String arguments to setTimeout and setInterval are now ignored instead of causing a crash. 
